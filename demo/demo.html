@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    
+    <title>Code Prism Demo - X-Tag</title>
+    
+    <link rel="stylesheet" type="text/css" href="../src/code-prism.css"/>    
+    
+    <script type="text/javascript" src="../components/document.register/src/document.register.js"></script>
+    <script type="text/javascript" src="../components/x-tag-core/src/core.js"></script> 
+    
+    <script type="text/javascript" src="../src/code-prism.js"></script>
+
+  </head>
+  <body>
+
+    <x-code-prism language="javascript">
+    xtag.register('x-superinput', {
+      lifecycle: {
+        created: function(){
+          // superinputs begin life knowing they're super.
+          this.value = 'super';
+        }
+      }
+    });
+    </x-code-prism>
+
+  </body>
+</html>

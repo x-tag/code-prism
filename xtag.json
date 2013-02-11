@@ -1,0 +1,24 @@
+{	
+	"name": "CodePrism",
+	"tagName": "x-code-prism",
+	"version": "0.1.0",
+	"author": "Arron Schaar",
+	"description": "Code syntax highlighting using PrismJS",
+	"images": [],
+	"categories": ["structural"],
+	"demo": "demo/demo.html",
+	"compatibility": {	
+		"firefox": 5,
+		"chrome": 4,
+		"ie": 9,
+		"opera": 12,
+		"android": 2.1,
+		"ios": 4
+	},
+	"documentation": {
+		"description": "",
+		"attributes": { 
+			"language": "Syntax highlighting rules to use.  Available options are markup, css, clike and javascript."
+		}
+	}
+}
