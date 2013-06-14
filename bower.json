@@ -1,16 +1,17 @@
 {
   "name": "x-tag-code-prism",
   "description": "Code Syntax highlighting using PrismJS",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "keywords": [
     "web-components",
     "syntax",
-    "highlighting",    
+    "highlighting",
     "element",
     "x-tag"
   ],
-  "scripts": [
-    "src/code-prism.js"
+  "main": [
+    "src/code-prism.js",
+    "src/code-prism.css"
   ],
   "dependencies": {
     "x-tag-core": "*"
