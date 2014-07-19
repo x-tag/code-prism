@@ -14,17 +14,48 @@
 
   </head>
   <body>
+    <dl>
 
-    <x-code-prism language="javascript">
-    xtag.register('x-superinput', {
-      lifecycle: {
-        created: function(){
-          // superinputs begin life knowing they're super.
-          this.value = 'super';
-        }
-      }
-    });
-    </x-code-prism>
+        <dt>Syntax highlighting: </dt>
+        <dd>
+            <x-code-prism language="javascript">
+xtag.register('x-superinput', {
+  lifecycle: {
+    created: function(){
+      // superinputs begin life knowing they're super.
+      this.value = 'super';
+    }
+  }
+});
+            </x-code-prism>
+        </dd>
 
+        <dt>With line numbers: </dt>
+        <dd>
+            <x-code-prism language="javascript" line-numbers="true">
+xtag.register('x-superinput', {
+  lifecycle: {
+    created: function(){
+      // superinputs begin life knowing they're super.
+      this.value = 'super';
+    }
+  }
+});
+            </x-code-prism>
+        </dd>
+        <dt>With line numbers offset at 100: </dt>
+        <dd>
+            <x-code-prism language="javascript" line-numbers="100">
+xtag.register('x-superinput', {
+  lifecycle: {
+    created: function(){
+      // superinputs begin life knowing they're super.
+      this.value = 'super';
+    }
+  }
+});
+            </x-code-prism>
+        </dd>
+    </dl>
   </body>
 </html>

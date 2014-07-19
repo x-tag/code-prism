@@ -40,3 +40,8 @@ xtag.register('x-superinput', {
 </x-code-prism>
 ```
 
+### Attributes
+
+ * `language` : supported values are `javascript`, `markup`, `clike`, `*`
+ * `line-numbers` (optional): `true` or a Number that represents the starting offset.
+
