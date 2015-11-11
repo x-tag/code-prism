@@ -3,28 +3,26 @@
 
   <head>
     <meta charset="utf-8" />
-    
     <title>Code Prism Demo - X-Tag</title>
-    
-    <link rel="stylesheet" type="text/css" href="../src/code-prism.css"/>    
-    
+
+    <link rel="stylesheet" type="text/css" href="../src/main.css"/>
+
     <script type="text/javascript" src="x-tag-components.js"></script>
-    
-    <script type="text/javascript" src="../src/code-prism.js"></script>
+    <script type="text/javascript" src="../src/main.js"></script>
 
   </head>
   <body>
 
-    <x-code-prism language="javascript">
-    xtag.register('x-superinput', {
-      lifecycle: {
-        created: function(){
-          // superinputs begin life knowing they're super.
-          this.value = 'super';
-        }
+<x-code-prism language="javascript">
+  xtag.register('x-superinput', {
+    lifecycle: {
+      created: function(){
+        // superinputs begin life knowing they're super.
+        this.value = 'super';
       }
-    });
-    </x-code-prism>
+    }
+  });
+</x-code-prism>
 
   </body>
 </html>
