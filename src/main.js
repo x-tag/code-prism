@@ -13,13 +13,11 @@ xtag.register('x-code-prism', {
   },
   accessors:{
     language: {
-      attribute: {
-        def: 'javascript'
-      }
+      attribute: {}
     },
     codeContent: {
       set: function(code){
-        this.innerHTML = '<pre><code class="language-'+ this.language + '">' + code + '</code></pre>';
+        this.innerHTML = '<pre><code class="language-'+ (this.language || 'javascript') + '">' + code + '</code></pre>';
         Prism.highlightElement(this.firstElementChild.firstElementChild, false);
       }
     }
