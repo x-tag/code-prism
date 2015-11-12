@@ -12,7 +12,6 @@
 
   function update(node, force){
     if (node.xtagComponentReady || force) {
-      console.log(node);
       var lineNumbers = node.hasAttribute('line-numbers');
       node.innerHTML = '<pre ' + (lineNumbers ? 'data-start="' + (Number(node.getAttribute('line-numbers')) || 1) + '"' : '') +
         ' class="language-'+ (node.language || 'javascript') + ' ' +
